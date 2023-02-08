@@ -1,0 +1,136 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(234, 234, 234);
+}
+
+.dark{
+    background-color: rgba(0, 0, 0, 0.838);
+
+
+}
+
+.dark .calculator{
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.116) , -15px -15px 20px rgba(255, 255, 255, 0.057)
+
+}
+
+.dark .calculator .buttons span{
+    color: white;
+}
+.dark .calculator .buttons #value{
+    box-shadow: inset 5px 5px 10px rgba(27, 27, 27, 0.126), inset -5px -5px 20px rgb(0, 0, 0);
+    color: white;
+}
+.calculator{
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    box-shadow: 15px 15px 20px rgba(128, 128, 128, 0.151) , 15px 15px 20px rgba(0, 0, 0, 0.151);
+    border-radius: 20px;
+
+}
+
+.calculator .buttons{
+    position: relative;
+    display: grid;
+
+}
+.calculator .buttons #value{
+    position:relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: green;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.126), inset -5px -5px 20px rgb(247, 247, 247);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 0 20px ;
+    font-size: 2em;
+    font-weight: 500;
+
+
+
+}
+
+.calculator .buttons span{
+    padding: relative;
+    padding: 10px;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.107),  -5px -5px 20px rgba(247, 247, 247, 0.642);
+    min-width: 40px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    color: rgb(39, 31, 31);
+    border: 2px solid rgb(212, 212, 212);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.107);
+    border-radius: 10px;
+    user-select: none;
+
+    
+    
+
+
+
+}
+.calculator .buttons span:active{
+    box-shadow: inset 5px 5px 10px rgba(245, 245, 245, 0.107) ,inset -5px -5px 10px rgba(0, 0, 0, 0.13);
+    color: red;
+}
+.calculator .buttons span#clear{
+    grid-column: span 2;
+    background-color: red;
+    color: whitesmoke;
+    border: 2px solid white;
+
+}
+
+
+.calculator .buttons span#plus{
+    grid-row: span 2;
+    background: green;
+    color: white;
+    border:rgb(0, 0, 0);
+
+
+}
+.calculator .buttons span#clear, .calculator .buttons span#plus, .calculator .buttons span#equal{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.18) ,  -5px -5px 10px rgba(255, 255, 255, 0.13), inset 5px 5px 10px rgba(0, 0, 0, 0.08);
+    
+    
+
+    
+
+
+}
+
+
+
+.toggleBtn{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
+    border: 2px solid white;
+
+}

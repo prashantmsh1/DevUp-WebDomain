@@ -1,0 +1,402 @@
+*{
+    margin: 0;padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+}
+.container{
+    background-color: black;
+
+    height: 100vh;
+    
+    
+}
+
+
+
+.container header{
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    /* left: 40%; */
+    background-color:white;
+    /* top: 100%; */
+    width: 100%;
+    z-index: 10001;
+    
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  
+
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header nav ul li{
+ letter-spacing: 4px;
+    padding: 8%;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: .2s all ease;
+}
+nav ul li a:hover{
+    color: rgb(119, 120, 121);
+}
+
+.container header .logo img{
+    width: 250px;
+    height: 70px;
+
+}
+
+header nav ul li{
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* margin-top: 5%; */
+    overflow: hidden;
+
+}
+.hero .name{
+    /* font-size: 4.8rem; */
+    color: white;
+    /* font-weight: 700; */
+    margin-left: 10%;
+   
+}
+
+
+.hero img{
+    /* padding-left: 30%; */
+   width: 40%;
+
+}
+
+
+.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  /* transform: translateY(-1px); */
+  background-color: #595959;
+  color: white;
+  /* border: 6px solid black; */
+
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+
+/* about-section/ */
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 4%; */
+    /* padding-top: 10%; */
+    
+    
+}
+#about img{
+    width: 100%;
+    z-index: 999;222
+    position: relative;
+}
+
+#about .a{
+    position: absolute;
+    /* bottom: ; */
+    z-index: 1000;
+}
+#about .about-title{
+    color: red;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 17%;
+    /* margin-top: 5%; */
+}
+#about .about-desc{
+    padding: 5% 25% 0 25%;
+    text-align: center;
+
+}
+
+
+/* education */
+
+
+
+#education{
+    background-color: black;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#education img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 4%;
+}
+#education .education-title{
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin-bottom: 4%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#education .education-desc{
+    padding: 0 25% 0 25%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+
+/* form */
+
+#contact{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact img{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 10%;
+}
+#contact .contact-form{
+    background-color: rgb(0, 0, 0);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 23%;
+    border-radius: 2%;
+    box-shadow: 2px 1px 7px 1px black;
+
+
+
+}
+
+#contact .contact-title{
+    font-size: 3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+.contact-form{
+    margin-top: 2%;
+}
+
+.input-text{
+    width: 240px;
+    height: 40px;
+
+    margin-top: 10%;
+}
+.input-email{
+    width: 240px;
+    height: 40px;
+    margin-top: 10%;
+}
+
+
+.button button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 130px;
+    padding: 4%;
+    height: 40px;
+    margin-top: 20%;
+    text-align: center;
+    left: 50px;
+    /* margin: auto auto; */
+    position: relative;
+    transition: .2s all ease;
+    
+
+}
+
+
+.button button a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.button button:hover{
+    background-color: #efa104;
+    color: white;
+}
+
+
+
+/* projects */
+
+#project{
+    background-color: black;
+    height: 100vh;
+    color: rgb(255, 204, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10%;
+    margin-bottom: 1%;
+
+}
+#project .project-title{
+    font-size: 3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ margin-bottom: 7%;
+}
+#project .project-link{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    /* margin: 2%; */
+    color: rgb(0, 0, 0);
+    width: 300px;
+    
+}
+
+
+#project .btn{
+    margin: 2%;
+    
+    
+}
+.btn button{
+    font-size: 2rem;
+    width: 300px;
+    height: 50px;
+    transition: .2s all ease;
+    
+}
+
+#project  .btn button:hover{
+    background-color: #efa104;
+    color: white;
+}
+
+footer{
+
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.section-one .useful-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 3px;
+   
+    
+}
+
+.section-one .useful-links a{
+    margin: 10%;
+    transition: .2s all ease;
+}
+
+.section-one .useful-links a:hover{
+    transform: translateY(2px);
+}
+
+
+.section-one .useful-links .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+   
+    
+
+}
+
+.section-two {
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+    margin-bottom: 1%;
+    
+
+}
+
+footer .info{
+    color: white;
+
+    margin-top: 3%;
+}
+
+
