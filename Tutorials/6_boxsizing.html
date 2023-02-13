@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Edu TAS Beginner', cursive;
+        }
+
+        .container {
+            width: 1000px;
+            border: 8px solid purple;
+            margin: 33px auto;
+            background-color: rgb(239, 209, 183);
+
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 20px 5px;
+            padding: 12px 3px;
+            background-color: rgb(227, 225, 212);
+            /* margin: 9px 9px; */
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+
+        }
+
+        #stationary {
+            /* float: left; */
+            /* clear left does not allow float left elements to overlap */
+            clear: left;
+            width: 97%;
+
+        }
+
+        #glasses {
+            width: 97%;
+        }
+
+        p,
+        h3,
+        h1 {
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora
+                aliquam, et autem nihil dolore porro minima reprehenderit eaque dolorem provident iste molestiae at
+                veniam ducimus sint fuga temporibus libero Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab,
+                culpa voluptatem. Libero sed officia voluptates saepe quia fuga, placeat amet dicta, voluptatibus nobis
+                laborum veritatis ea? Error cum aliquam quod pariatur, cupiditate eaque libero. </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara " class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora
+                aliquam, et autem nihil dolore porro minima reprehenderit eaque dolorem provident iste molestiae at
+                veniam ducimus sint fuga temporibus libero Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut,
+                aspernatur nemo saepe officiis ipsum fuga, eius ab ducimus temporibus, delectus labore amet. Ipsum,
+                laudantium voluptatum omnis aperiam corrupti qui nihil ipsa eum delectus quia.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora
+                aliquam, et autem nihil dolore porro minima reprehenderit eaque dolorem provident iste molestiae at
+                veniam ducimus sint fuga temporibus libero </p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora
+                aliquam, et autem nihil dolore porro minima reprehenderit eaque dolorem provident iste molestiae at
+                veniam ducimus sint fuga temporibus libero </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
