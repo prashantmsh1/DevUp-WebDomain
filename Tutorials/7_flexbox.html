@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .navbar{
+            display: flex;
+            border: 2px solid red;
+            justify-content: space-evenly ;
+            flex-direction: row-reverse;
+        
+        }
+        .nav-element{
+            list-style: none;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            border: 2px solid red;
+            width: 40%;
+            text-align: end;
+        }
+        li{
+            display: flex;
+            border: 2px solid red;
+            margin-left: 20px;
+        }
+        span{
+            border: 2px solid red;
+        }
+        input{
+            width: 10%;
+            height: 20px;
+            margin: 20px;
+        }
+    </style>
+ </head>
+ <body>
+    <nav class="navbar">
+        <span><h1>Demo</h1></span>
+        <ul class="nav-element">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+        </ul>
+        <input type="text">
+    </nav>
+ </body>
+ </html>
