@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>This is heading 1</h1>
+        <p>This is paragraph</p>
+    </div>
+    <section>
+        <h2>This is heading</h2>
+        <div>This is division</div>
+    </section>
+    <script>
+        let name=prompt("Enter your name")
+        let a=document.body.childNodes
+        console.log(a)
+        console.log(document.body.firstElementChild)
+        let colr= document.body.firstElementChild.firstElementChild
+        colr.style.background="red"
+        console.log(document.body.lastElementChild)
+    </script>
+</body>
+</html>
